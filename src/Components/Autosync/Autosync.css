@@ -1,0 +1,83 @@
+.autosync{
+    display: flex;
+    flex-direction: row;
+}
+
+.autosync-left{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.autosync-left h1{
+    color: Black;
+    text-align: left;
+    font-family: Neuemachina, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.autosync-left-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.autosync-left-instagram{
+    color: antiquewhite;
+    background-color: #C53DFF;
+    box-shadow: inset #d779ff;
+    border-radius: 20px;
+    font-family: Gtwalsheimpro, sans-serif;
+    font-size: 44px;
+    line-height: 1.2em;
+}
+
+.autosync-left-tiktok{
+    color: antiquewhite;
+    background-color: #0E062C;
+    box-shadow: inset #363637;
+    border-radius: 20px;
+    font-family: Gtwalsheimpro, sans-serif;
+    font-size: 44px;
+    line-height: 1.2em;
+}
+
+.autosync-left-youtube{
+    color: antiquewhite;
+    background-color: #FF4A3D;
+    box-shadow: inset #e9756d;
+    border-radius: 20px;
+    font-family: Gtwalsheimpro, sans-serif;
+    font-size: 44px;
+    line-height: 1.2em;
+}
+
+.autosync-left-button{
+    border-radius: 18px;
+}
+
+.autosync-left-button btn{
+    color: #fff;
+    font-family: Gtwalsheimpro, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.autosync-right-heading{
+    display: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.autosync-right-heading img{
+    background-color: #E4F0C2;
+    border-radius: 50%;
+    color: #0E062C;
+    height: 40px;
+    width: 40px;
+}

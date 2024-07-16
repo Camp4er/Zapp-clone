@@ -1,0 +1,121 @@
+.launchinfo {
+  background-image: url("../../Assets/65bd017122b06c4609d7f4f4_Frame\ 625941.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  height: auto;
+}
+
+.launchinfo-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.launchinfo-title h1 {
+  color: #fff;
+  letter-spacing: -.9px;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#fff, #d9ceeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1.1em;
+  max-width: 900px;
+  text-align: left;
+}
+
+.launchinfo-title p {
+  color: #ddd4ed;
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3em;
+  max-width: 760px;
+  text-align: left;
+}
+
+.launchinfo-stepcover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 130px;
+}
+
+.launchinfo-stepcover-a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 900px;
+  width: 80%;
+}
+
+.launchinfo-steps {
+  width: 38%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.launchinfo-steps .image img {
+  width: 27px;
+}
+
+.launchinfo-steps h4 {
+  color: #fff;
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 18px; /* Reduced margin between h4 and p */
+  margin-top: 15px;
+}
+
+.launchinfo-steps p {
+  color: rgba(255, 255, 255, .8);
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 20px;
+  margin-top: 0; /* Ensure no extra margin */
+}
+
+@media screen and (max-width: 479px) {
+  .launchinfo-title h1 {
+      font-size: 50px;
+      font-weight: 600;
+      text-align: left;
+  }
+
+  .launchinfo-title p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .launchinfo-stepcover{
+    margin-left: 0;
+  }
+
+  .launchinfo-stepcover-a{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .launchinfo-steps {
+    width: 90%;
+  }
+}

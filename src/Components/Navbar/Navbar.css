@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px -2px black;
+  background-color: #171717;
+  height: 4rem;
+  width: 100%;
+  position: fixed; /* Ensures the navbar stays at the top */
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 2rem;
+  width: auto;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 4.6875rem;
+  padding: 0 10px;
+  color: #e3e4d6;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar-menu-item:hover {
+  background-color: #2b2a2a;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-login-signup {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-login-signup-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.navbar-login-signup-list li {
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-login-signup-list li:hover {
+  background-color: #2b2a2a;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-login-signup-list button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f40808;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: 7.5rem;
+  height: 2.5rem;
+}
+
+.navbar-login-signup-list button:hover {
+  background-color: #d50404;
+}
+
+.button-image {
+  height: 2.0625rem;
+  width: 2rem;
+  margin-left: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .navbar-menu {
+     gap: 0px; /*no change */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    margin-left: 0;
+  }
+
+  .navbar-login-signup-list button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .button-image {
+    height: 16px;
+  }
+}

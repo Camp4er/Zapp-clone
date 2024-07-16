@@ -1,0 +1,143 @@
+.whatiszaap {
+  z-index: 1;
+  opacity: 1;
+  background-color: #fff;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding: 7.5rem 0 8.125rem;
+  display: block;
+  position: relative;
+  margin-right: 0 !important;
+}
+
+.whatiszaap-outer {
+  z-index: 9;
+  border: 0.125rem solid #3579de;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  max-width: 56.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem 2.5rem;
+  display: flex;
+  position: relative;
+  transform: rotate(-2.5deg);
+}
+
+.whatiszaap-outer h2 {
+  z-index: 2;
+  color: #000;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-family: 'Gtwalsheimpro', sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.2em;
+  position: relative;
+}
+
+.violet-text {
+  color: #7f48fb;
+  display: block;
+}
+
+.figmabox {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.figmabox.bottom-right {
+  bottom: -0.5rem;
+  right: -0.5rem;
+}
+
+.figmabox.bottom-left {
+  bottom: -0.5rem;
+  left: -0.5rem;
+}
+
+.figmabox.top-right {
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
+.figmabox.top-left {
+  top: -0.5rem;
+  left: -0.5rem;
+}
+
+.whatiszaap-outer-heading {
+  color: #3579de;
+  font-family: 'Gtwalsheimpro', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: -2.25rem;
+  left: -0.625rem;
+}
+
+.whatiszaap-outer-p {
+  z-index: 2;
+  color: rgba(17, 17, 17, 0.75);
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, #000, #3c3b3b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 0;
+  font-family: 'Gtwalsheimpro', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  position: relative;
+}
+
+.cloud-image {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 56.25rem) {
+  .whatiszaap {
+    overflow: hidden;
+  }
+
+  .whatiszaap-outer {
+    width: 90%;
+    max-width: 50rem;
+    padding: 4rem 0rem;   
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 40rem) {
+  .whatiszaap-outer {
+    transform: none;
+  }
+
+  .whatiszaap-outer h2 {
+    font-size: 3.125rem;
+  }
+
+  .whatiszaap-outer-p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .whatiszaap-outer {
+    width: calc(100% - 3.75rem);
+    max-width: 22.75rem;
+    padding: 3.75rem 1.25rem;
+  }
+}

@@ -1,0 +1,288 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #171717;
+  color: #e3e4d6;
+  
+  box-shadow: 0 -1px 3px -2px black;
+  position: relative; /* Ensure relative positioning for z-index to work */
+  z-index: 1000; 
+}
+
+.footer-section {
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+  margin: 20px;
+}
+
+.legal-section {
+  margin-left: 90px;
+}
+
+.footer-logo {
+  width: 150px; 
+  margin-bottom: 10px;
+}
+
+.legal {
+  color: #7b7f92 !important;
+    width: auto;
+    margin: 20px 0;
+    font-family: Gtwalsheimpro, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    position: static;
+}
+
+.footer-section h4 {
+  /* margin-bottom: 10px; */
+  color: #fff;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-section p {
+  margin: 0 0; 
+  color: #b9b9b9;
+  border-radius: 0;
+  padding: 10px;
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.footer-policies {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-policies p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.footer-policies img {
+  margin-right: 5px;
+  width: 20px; 
+}
+
+.footer-links-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slit {
+  max-width: 80px;
+}
+
+.footer-links-icons img {
+  width: auto;
+  height: auto;
+  max-height: 26px;
+  max-width: 28px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 40%;
+  margin-bottom: -17px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.connect-logo {
+  margin: 0 5px;
+}
+
+.connect-logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-links-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.connect-logo {
+  background-color: rgb(250, 245, 245);
+  border-radius: 60%;
+  height: 37px;
+  width: 37px;
+}
+
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-policies {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-policies p {
+    margin: 0 10px;
+  }
+}
+
+/* .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #171717;
+  color: #e3e4d6;
+  padding: 1.25rem 2.5rem; 
+  box-shadow: 0 -0.0625rem 0.1875rem -0.125rem black; 
+  position: relative;
+  z-index: 1000;
+}
+
+.footer-section {
+  flex: 1 1 12.5rem;  {Flex-grow, flex-shrink, flex-basis converted to rem }
+  margin: 1.25rem; 
+
+.footer-logo {
+  width: 9.375rem; 
+  margin-bottom: 0.625rem; 
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem; 
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 1rem; 
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-section p {
+  margin: 0;
+  padding: 0.625rem; 
+  font-family: Gtwalsheimpro, sans-serif;
+  font-size: 1rem; 
+  font-weight: 500;
+  color: #b9b9b9;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer-policies {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-policies p {
+  display: flex;
+  align-items: center;
+  margin: 0.3125rem 0; 
+}
+
+.footer-policies img {
+  margin-right: 0.3125rem; 
+  width: 1.25rem; 
+}
+
+.footer-links-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links-icons img {
+  width: auto;
+  height: auto;
+  max-height: 1.625rem; 
+  max-width: 1.75rem; 
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 40%;
+  margin-bottom: -1.0625rem; 
+  margin-left: 0.3125rem;
+}
+
+.connect-logo {
+  background-color: rgb(250, 245, 245);
+  border-radius: 60%;
+  height: 2.3125rem; 
+  width: 2.3125rem; 
+
+.connect-logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-links-icons {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 48rem) { 
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 0.625rem 0; 
+  }
+
+  .footer-section h4 {
+    margin-bottom: 0.625rem; 
+  }
+
+  .footer-policies {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-policies p {
+    margin: 0 0.625rem; 
+  }
+
+  .footer-links-icons {
+    gap: 10px;
+  }
+
+  .footer-links-icons img {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-links-icons {
+    padding-right: 34px;
+    gap: 10px;
+  }
+
+  .footer-links-icons img {
+    margin-left: 5px;
+  }
+}  */
